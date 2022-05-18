@@ -6,26 +6,25 @@ module load kentsrc/20170117
 module load bedtools/2.27.1
 
 # INPUT
-dir=/scratch/twlab/hlee/genomes/danRer10
-ensembl=${dir}/Danio_rerio.GRCz10.91.gtf.gz
-chromSize=${dir}/danRer10.chrom.sizes 
+ensembl=Danio_rerio.GRCz10.91.gtf.gz
+chromSize=danRer10.chrom.sizes 
 
-cgi_ucsc=${dir}/cpgIslandExt.txt.gz
+cgi_ucsc=cpgIslandExt.txt.gz
 
 # TEMPORARY OUTPUT
-genpred=${dir}/features/GRCz10.91.annotation.genPred
-tmp=${dir}/features/GRCz10.91.annotation.unsrt.bed
+genpred=features/GRCz10.91.annotation.genPred
+tmp=features/GRCz10.91.annotation.unsrt.bed
 
 # OUTPUT
-bed12=${dir}/features/GRCz10.91.annotation.bed.gz
-exon=${dir}/features/GRCz10.91.exon.bed.gz
-intron=${dir}/features/GRCz10.91.intron.bed.gz
-utr5=${dir}/features/GRCz10.91.5utr.bed.gz
-utr3=${dir}/features/GRCz10.91.3utr.bed.gz
-cds=${dir}/features/GRCz10.91.cds.bed.gz
-tss2k=${dir}/features/GRCz10.91.tss2k.bed.gz
-cgi=${dir}/features/danRer10.cgi.bed.gz
-intergenic=${dir}/features/GRCz10.91.intergenic.bed.gz
+bed12=features/GRCz10.91.annotation.bed.gz
+exon=features/GRCz10.91.exon.bed.gz
+intron=features/GRCz10.91.intron.bed.gz
+utr5=features/GRCz10.91.5utr.bed.gz
+utr3=features/GRCz10.91.3utr.bed.gz
+cds=features/GRCz10.91.cds.bed.gz
+tss2k=features/GRCz10.91.tss2k.bed.gz
+cgi=features/danRer10.cgi.bed.gz
+intergenic=features/GRCz10.91.intergenic.bed.gz
 
 # COMMANDS
 ## initial prep step
