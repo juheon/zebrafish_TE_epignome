@@ -5,13 +5,11 @@
 #SBATCH --array=2,8
 #SBATCH --job-name=hic
 
-
 # SOFTWARE
 module load bedtools/2.27.1
 
 ID=$SLURM_ARRAY_TASK_ID
-workdir=/scratch/twlab/hlee/zf_te
-
+workdir=`pwd`
 
 ### INPUT
 tissue_list=${workdir}/tissues-e.txt
@@ -22,11 +20,9 @@ tissue=$( cat $tissue_list | sed "${ID}q;d" )
 tad=${dir_in}/TADs/TADs_${tissue}.bed
 loop=${dir_in}/loop_anchors/loops_${tissue}.txt
 
-
 ### OUTPUT
 boundaries=${dir_in}/TADs/TAD_boundaries_${tissue}.bed.gz
 anchors=${dir_in}/loop_anchors/loop_anchors_${tissue}.bed.gz
-
 
 
 ### Commands
