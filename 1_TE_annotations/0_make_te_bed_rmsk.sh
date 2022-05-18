@@ -5,23 +5,22 @@
 module load bedtools/2.27.1
 
 # INPUT
-dir=/scratch/twlab/hlee/genomes/danRer10/rmsk
-rmsk=${dir}/rmsk.txt.gz
+rmsk=rmsk.txt.gz
 
-cpg=${dir}/../CpG_sites.bed.gz
+cpg=CpG_sites.bed.gz
 
 # OUTPUT
-dna=${dir}/danRer10.DNA.bed.gz		## DNA + DNA?
-ltr=${dir}/danRer10.LTR.bed.gz
-line=${dir}/danRer10.LINE.bed.gz
-sine=${dir}/danRer10.SINE.bed.gz
-rc=${dir}/danRer10.RC.bed.gz		## RC
-te=${dir}/danRer10.TE.bed.gz		## all 
+dna=danRer10.DNA.bed.gz		## DNA + DNA?
+ltr=danRer10.LTR.bed.gz
+line=danRer10.LINE.bed.gz
+sine=danRer10.SINE.bed.gz
+rc=danRer10.RC.bed.gz		## RC
+te=danRer10.TE.bed.gz		## all 
 
-te_cg=${dir}/danRer10.TE_wCG.bed.gz
-te_frag=${dir}/danRer10.TE_frag.bed.gz
+te_cg=danRer10.TE_wCG.bed.gz
+te_frag=danRer10.TE_frag.bed.gz
 
-out=${dir}/danRer10.CpGs_in_TE.txt
+out=danRer10.CpGs_in_TE.txt
 
 # COMMANDS
 # REPEAT by CLASS
