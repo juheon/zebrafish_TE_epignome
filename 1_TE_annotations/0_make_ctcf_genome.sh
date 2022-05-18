@@ -4,11 +4,11 @@
 # SOFTWARE
 module load homer/4.8
 
-motif=/scratch/twlab/hlee/zf_te/0_cres/ctcf_zf.motif
+motif=ctcf_zf.motif
 
 scanMotifGenomeWide.pl $motif danRer10 -bed -keepAll > ctcf_zebrafish.sites.danRer10.bed
 
-ctcf_zf_motif=/scratch/twlab/hlee/genomes/danRer10/CTCF_zebrafish.sites.bed.gz
+ctcf_zf_motif=CTCF_zebrafish.sites.bed.gz
 cat ctcf_zebrafish.sites.danRer10.bed | awk -F"\t" -vOFS="\t" '{$2--; print }' |  sort -k1,1 -k2,2n | gzip -nc > $ctcf_zf_motif
 
 
