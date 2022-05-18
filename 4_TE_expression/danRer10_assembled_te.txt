@@ -1,0 +1,1 @@
+/scratch/hlee/fylab/rna/6_taco_v1/danRer10_assembled_te.txt
