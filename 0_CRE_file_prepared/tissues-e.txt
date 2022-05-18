@@ -1,0 +1,11 @@
+blood
+brain
+colon
+heart
+intestine
+kidney
+liver
+muscle
+skin
+spleen
+testis
