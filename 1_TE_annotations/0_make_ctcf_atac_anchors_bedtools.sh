@@ -10,15 +10,14 @@
 module load bedtools/2.27.1
 
 ID=$SLURM_ARRAY_TASK_ID
-workdir=/scratch/twlab/hlee/zf_te
+workdir=`pwd`
 
 
 ### INPUT
 tissue_list=${workdir}/tissues-e.txt
 dir_in=${workdir}/0_cres
 
-motif=/scratch/twlab/hlee/genomes/danRer10/ctcf.sites.danRer10.bed
-
+motif=ctcf.sites.danRer10.bed
 
 tissue=$( cat $tissue_list | sed "${ID}q;d" )
 
@@ -28,7 +27,6 @@ anchors=${dir_in}/loop_anchors/loop_anchors_${tissue}.bed.gz
 dist=${dir_in}/distalatacseq/${tissue}.distal.open.bed
 prox=${dir_in}/proximalatacseq/${tissue}.proximal.open.bed
 
-
 ### OUTPUT
 atac_ctcf=${dir_in}/${tissue}.ctcf_atac.bed.gz
 
@@ -36,7 +34,6 @@ atac_ctcf=${dir_in}/${tissue}.ctcf_atac.bed.gz
 #loop_out=${dir_in}/loop_anchors/loop_anchors_${tissue}.ctcf_atac.bed.gz
 tad_out=${dir_in}/TADs/TAD_boundaries_${tissue}.atac_ctcf.bed.gz
 loop_out=${dir_in}/loop_anchors/loop_anchors_${tissue}.atac_ctcf.bed.gz
-
 
 
 ### COMMANDS
