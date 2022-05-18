@@ -11,15 +11,13 @@ module load bedtools/2.27.1
 ID=$SLURM_ARRAY_TASK_ID
 
 # GENOME FEATURES
-dir_feature=/scratch/twlab/hlee/genomes/danRer10
-list=${dir_feature}/features.txt
+list=features.txt
 feature=$( cat $list | sed "${ID}q;d" )
-bed_feature=${dir_feature}/${feature}.bed.gz
+bed_feature=${feature}.bed.gz
 
 
 # INPUT DATA
-dir_in=/scratch/twlab/hlee/fylab/wgbs/processing/4_dss
-dss_files=${dir_in}/fylab_WGBS_zt_*.dss.txt.gz
+dss_files=fylab_WGBS_zt_*.dss.txt.gz
 
 # OUTPUT
 dir_out=1_annot
