@@ -7,7 +7,7 @@
 #SBATCH --job-name=lor_subfam
 
 # SOFTWARE
-ml bedtools/2.27.1
+module load bedtools/2.27.1
 
 
 # GENOME FEATURES
