@@ -18,7 +18,7 @@ line=danRer10.LINE_frag.bed.gz
 sine=danRer10.SINE_frag.bed.gz
 rc=danRer10.RC_frag.bed.gz
 
-te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
+te_bed=$(ls danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
 
 # INPUT DATA
 list=tissues-e.txt
@@ -30,7 +30,7 @@ loop=${dir_in}/loop_anchors/loop_anchors_${tissue}.cres_ctcf_zebrafish.bed.gz
 
 
 # OUTPUT
-dir_out=${workdir}/2_dynamic
+dir_out=2_dynamic
 out=${dir_out}/fraction_atac_ctcf_zf_of_TE_in_${tissue}.txt
 
 
