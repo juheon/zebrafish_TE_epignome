@@ -11,7 +11,7 @@ workdir=`pwd`
 ID=$SLURM_ARRAY_TASK_ID
 
 # TE classes
-list=features.txt
+list=TEfeatures.txt
 feature=$( cat $list | sed "${ID}q;d" )
 bed_te=${feature}.bed.gz
 te=${feature#rmsk/danRer10.}
