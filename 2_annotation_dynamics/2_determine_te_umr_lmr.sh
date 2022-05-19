@@ -3,7 +3,6 @@
 
 #SBATCH --array=1-11
 #SBATCH --mem=2G
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=te_umr_lmr_tissue
 
 # SOFTWARE
@@ -12,8 +11,7 @@ ID=$SLURM_ARRAY_TASK_ID
 
 
 # TE classes
-dir_te=/scratch/twlab/hlee/genomes/danRer10/rmsk
-bed_te=${dir_te}/danRer10.TE_frag.bed.gz
+bed_te=danRer10.TE_frag.bed.gz
 
 
 # INPUT DATA
