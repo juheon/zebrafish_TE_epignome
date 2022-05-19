@@ -19,7 +19,7 @@ line=danRer10.LINE_frag.bed.gz
 sine=danRer10.SINE_frag.bed.gz
 rc=danRer10.RC_frag.bed.gz
 
-te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
+te_bed=$(ls danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
 
 
 # INPUT DATA
