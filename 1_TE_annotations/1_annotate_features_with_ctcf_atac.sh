@@ -11,7 +11,7 @@ ID=$SLURM_ARRAY_TASK_ID
 workdir=`pwd`
 
 # GENOME FEATURES
-features.txt
+list=features.txt
 feature=$( cat $list | sed "${ID}q;d" )
 bed_feature=${feature}.bed.gz
 
