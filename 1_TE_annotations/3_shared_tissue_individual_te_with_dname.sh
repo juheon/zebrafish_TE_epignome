@@ -3,17 +3,14 @@
 
 #SBATCH --mem=2G
 ##SBATCH --array=1-10
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=share_tissue
 
 # SOFTWARE
 module load bedtools/2.27.1
 ID=$SLURM_ARRAY_TASK_ID
 
-
 # TE classes
-dir_te=/scratch/twlab/hlee/genomes/danRer10/rmsk
-bed_te_cg=${dir_te}/danRer10.TE_wCG.bed.gz
+bed_te_cg=danRer10.TE_wCG.bed.gz
 
 # INPUT DATA
 te_me=2_dynamic/danRer10.TE_wCG.DNAme_*_cov5.bed.gz
