@@ -17,11 +17,11 @@ line=danRer10.LINE.bed.gz
 sine=danRer10.SINE.bed.gz
 rc=danRer10.RC.bed.gz
 
-te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
+te_bed=$(ls danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
 
 
 # INPUT DATA
-list=${workdir}/tissues-e.txt
+list=tissues-e.txt
 tissue=$( cat $list | sed "${ID}q;d" )
 
 dir_in=0_cres/union
@@ -30,7 +30,7 @@ loop=${dir_in}/loop_anchors_union.atac_ctcf.bed.gz
 
 
 # OUTPUT
-dir_out=${workdir}/2_dynamic
+dir_out=2_dynamic
 out=${dir_out}/fraction_atac_ctcf_union_of_TE.txt
 
 
