@@ -2,7 +2,6 @@
 # Author: Hyung Joo Lee
 
 #SBATCH --array=1-11
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=cal_me_te
 ##SBATCH --mail-type=ALL
 
@@ -16,13 +15,12 @@ minCG=1
 
 
 # INPUT
-bed_te=/scratch/twlab/hlee/genomes/danRer10/rmsk/danRer10.TE_wCG.bed.gz
+bed_te=danRer10.TE_wCG.bed.gz
 
 list=tissues-e.txt
 tissue=$( cat $list | sed "${ID}q;d" )
 
-dir_in=/scratch/twlab/hlee/fylab/wgbs/processing/4_dss
-dss=${dir_in}/fylab_WGBS_zt_${tissue}.dss.txt.gz
+dss=fylab_WGBS_zt_${tissue}.dss.txt.gz
 
 # OUTPUT
 dir_out=2_dynamic
