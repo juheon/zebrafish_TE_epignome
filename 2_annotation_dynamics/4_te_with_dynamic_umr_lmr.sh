@@ -2,7 +2,6 @@
 # Author: Hyung Joo Lee
 
 #SBATCH --mem=2G
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=dynamic_umr_lmr
 
 # INPUT DATA
