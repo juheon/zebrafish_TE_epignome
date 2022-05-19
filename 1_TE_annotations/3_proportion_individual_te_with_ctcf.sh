@@ -3,23 +3,21 @@
 
 #SBATCH --mem=2G
 #SBATCH --array=2,8
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=propor_ind_te
 
 # SOFTWARE
 module load bedtools/2.27.1
 ID=$SLURM_ARRAY_TASK_ID
-workdir=/scratch/twlab/hlee/zf_te
+workdir=`pwd`
 
 
 # TE 6 bed files
-dir_te=/scratch/twlab/hlee/genomes/danRer10/rmsk
-te=${dir_te}/danRer10.TE_frag.bed.gz
-dna=${dir_te}/danRer10.DNA_frag.bed.gz
-ltr=${dir_te}/danRer10.LTR_frag.bed.gz
-line=${dir_te}/danRer10.LINE_frag.bed.gz
-sine=${dir_te}/danRer10.SINE_frag.bed.gz
-rc=${dir_te}/danRer10.RC_frag.bed.gz
+te=danRer10.TE_frag.bed.gz
+dna=danRer10.DNA_frag.bed.gz
+ltr=danRer10.LTR_frag.bed.gz
+line=danRer10.LINE_frag.bed.gz
+sine=danRer10.SINE_frag.bed.gz
+rc=danRer10.RC_frag.bed.gz
 
 te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
 
