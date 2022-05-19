@@ -3,7 +3,6 @@
 
 #SBATCH --mem=2G
 #SBATCH --array=9-14
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=annot_feat_epi
 
 # SOFTWARE
@@ -11,13 +10,12 @@ module load bedtools/2.27.1
 ID=$SLURM_ARRAY_TASK_ID
 
 # TE
-dir_te=/scratch/twlab/hlee/genomes/danRer10
-list=${dir_te}/features.txt
+list=TEfeatures.txt
 
 te=$( cat $list | sed "${ID}q;d" )
 te=${te/rmsk\/danRer10./}
 
-bed=${dir_te}/rmsk/danRer10.${te}.bed.gz
+bed=danRer10.${te}.bed.gz
 
 
 # INPUT DATA
