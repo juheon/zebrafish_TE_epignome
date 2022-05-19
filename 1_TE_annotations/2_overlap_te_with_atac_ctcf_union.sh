@@ -18,7 +18,7 @@ te=${te/rmsk\/danRer10./}
 bed=danRer10.${te}.bed.gz
 
 # INPUT DATA
-dir_in=/scratch/twlab/hlee/zf_te/0_cres/union
+dir_in=0_cres/union
 
 boundaries=${dir_in}/TAD_boundaries_union.atac_ctcf.bed.gz
 anchors=${dir_in}/loop_anchors_union.atac_ctcf.bed.gz
