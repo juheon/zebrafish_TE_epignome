@@ -3,7 +3,6 @@
 
 #SBATCH --mem=2G
 #SBATCH --array=9-14
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=annot_feat_epi
 
 # SOFTWARE
