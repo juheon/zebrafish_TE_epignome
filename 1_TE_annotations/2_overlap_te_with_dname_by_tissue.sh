@@ -3,7 +3,6 @@
 
 #SBATCH --mem=2G
 #SBATCH --array=1-11
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=annot_feat_epi
 
 # SOFTWARE
@@ -11,13 +10,12 @@ module load bedtools/2.27.1
 ID=$SLURM_ARRAY_TASK_ID
 
 # GENOME FEATURES
-dir_te=/scratch/twlab/hlee/genomes/danRer10/rmsk
-te=${dir_te}/danRer10.TE.bed.gz
-dna=${dir_te}/danRer10.DNA.bed.gz
-ltr=${dir_te}/danRer10.LTR.bed.gz
-line=${dir_te}/danRer10.LINE.bed.gz
-sine=${dir_te}/danRer10.SINE.bed.gz
-rc=${dir_te}/danRer10.RC.bed.gz
+te=danRer10.TE.bed.gz
+dna=danRer10.DNA.bed.gz
+ltr=danRer10.LTR.bed.gz
+line=danRer10.LINE.bed.gz
+sine=danRer10.SINE.bed.gz
+rc=danRer10.RC.bed.gz
 
 te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}.bed.gz )
 
@@ -26,7 +24,7 @@ te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}.bed.gz )
 list=tissues-e.txt
 tissue=$( cat $list | sed "${ID}q;d" )
 
-dss=/scratch/twlab/hlee/fylab/wgbs/processing/4_dss/fylab_WGBS_zt_${tissue}.dss.txt.gz
+dss=fylab_WGBS_zt_${tissue}.dss.txt.gz
 
 # OUTPUT
 dir_out=1_annot
