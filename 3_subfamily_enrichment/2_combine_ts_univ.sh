@@ -3,7 +3,6 @@
 
 #SBATCH --mem=2G
 ##SBATCH --array=1-11
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=lor_subfam
 
 # SOFTWARE
