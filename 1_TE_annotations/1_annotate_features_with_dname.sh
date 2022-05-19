@@ -2,8 +2,7 @@
 # Author: Hyung Joo Lee
 
 #SBATCH --mem=5G
-#SBATCH --array=1-13 #14
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
+#SBATCH --array=1-13
 #SBATCH --job-name=annot_feat_epi
 
 # SOFTWARE
