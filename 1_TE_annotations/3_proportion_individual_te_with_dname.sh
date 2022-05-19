@@ -3,22 +3,19 @@
 
 #SBATCH --mem=2G
 #SBATCH --array=1-11
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=prop_te_dname
 
 # SOFTWARE
 module load bedtools/2.27.1
 ID=$SLURM_ARRAY_TASK_ID
 
-
 # TE classes
-dir_te=/scratch/twlab/hlee/genomes/danRer10/rmsk
-bed_dna=${dir_te}/danRer10.DNA.bed.gz
-bed_ltr=${dir_te}/danRer10.LTR.bed.gz
-bed_line=${dir_te}/danRer10.LINE.bed.gz
-bed_sine=${dir_te}/danRer10.SINE.bed.gz
-bed_rc=${dir_te}/danRer10.RC.bed.gz
-bed_te=${dir_te}/danRer10.TE.bed.gz
+bed_dna=danRer10.DNA.bed.gz
+bed_ltr=danRer10.LTR.bed.gz
+bed_line=danRer10.LINE.bed.gz
+bed_sine=danRer10.SINE.bed.gz
+bed_rc=danRer10.RC.bed.gz
+bed_te=danRer10.TE.bed.gz
 
 
 # INPUT DATA
