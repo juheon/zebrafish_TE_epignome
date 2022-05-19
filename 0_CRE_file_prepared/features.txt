@@ -1,1 +1,8 @@
- 
+exon
+intron
+5utr
+3utr
+cds
+tss2k
+cgi
+intergenic
