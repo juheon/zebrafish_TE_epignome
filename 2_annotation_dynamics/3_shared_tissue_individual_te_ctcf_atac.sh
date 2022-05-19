@@ -2,7 +2,6 @@
 # Author: Hyung Joo Lee
 
 #SBATCH --mem=2G
-##SBATCH --workdir=/scratch/twlab/hlee/zf_te
 #SBATCH --job-name=annot_feat_epi
 
 # SOFTWARE
@@ -11,8 +10,7 @@ ID=$SLURM_ARRAY_TASK_ID
 
 
 # TE classes
-dir_te=/scratch/twlab/hlee/genomes/danRer10/rmsk
-bed_te=${dir_te}/danRer10.TEs.bed.gz
+bed_te=danRer10.TEs.bed.gz
 
 # INPUT DATA
 tad=2_dynamic/danRer10.TEs_2_tissues_boundaries.ctcf_atac.bed.gz
