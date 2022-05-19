@@ -17,7 +17,7 @@ line=danRer10.LINE.bed.gz
 sine=danRer10.SINE.bed.gz
 rc=danRer10.RC.bed.gz
 
-te_bed=$(ls ${dir_te}/danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
+te_bed=$(ls danRer10.{TE,DNA,LTR,LINE,SINE,RC}_frag.bed.gz )
 
 
 # INPUT DATA
@@ -31,7 +31,7 @@ loop=${dir_in}/loop_anchors_union.cres_ctcf_zebrafish.bed.gz
 
 
 # OUTPUT
-dir_out=${workdir}/2_dynamic
+dir_out=2_dynamic
 out=${dir_out}/fraction_atac_ctcf_zf_union_of_TE.txt
 
 
