@@ -2,7 +2,7 @@
 
 (**T**ransposable **E**lement **Pro**moter **F**inder **2**) 
 
-TEProf2 is a software pipeline optimized to find TE-gene fusion transcripts from short-read RNA-sequencing data. Upon finding these transcripts, the program will find which ones are enriched in the treatment samples.
+TEProf_zebrafish is a software pipeline optimized to find TE-gene fusion transcripts from short-read RNA-sequencing data in Zebrafish. Upon finding these transcripts, the program will find which ones are enriched in the treatment samples.
 
 In addition, the program can be run in a reference-guided approach based on previous runs or a user's custom transcript set that includes TE-gene fusion genes. 
 
