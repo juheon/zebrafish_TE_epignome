@@ -1,6 +1,6 @@
 # **TEProF_zebrafish**  
 
-(**T**ransposable **E**lement **Pro**moter **F**inder **2**) 
+(**T**ransposable **E**lement **Pro**moter **F**inder **for Zebrafish**) 
 
 TEProf_zebrafish is a software pipeline optimized to find TE-gene fusion transcripts from short-read RNA-sequencing data in Zebrafish. Upon finding these transcripts, the program will find which ones are enriched in the treatment samples.
 
