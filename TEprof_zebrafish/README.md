@@ -47,7 +47,7 @@ There are additional modules to facilitate transcript translation, MHC-antigen p
 
 # Summary
 
-TEProF2 v0.1
+TEProF_zebrafish v0.1
 
 This pipeline takes assembled RNA-sequencing data (.gtf format) in human or mouse, and then will be able to assemble the data into transcripts, predict the transcripts starting from transposable elements, and calculate expression of the transcripts in comparison to the whole. 
 
