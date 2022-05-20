@@ -1,4 +1,4 @@
-# Analysing the epigenomic landscape of zebrafish TEs
+# Analysis codes for Lee et al. 2022
 This repository contains major scripts used in data processing and plotting for ***Epigenomic analysis reveals prevalent contribution of transposable elements to cis-regulatory elements, tissue-specific expression, and alternative promoters in zebrafish***.
 
 ## Project summary
