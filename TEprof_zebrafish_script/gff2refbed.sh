@@ -7,7 +7,7 @@ ml kentUCSC/334
 ml bedops/2.4.19
 ml htslib/1.3.1
 
-workdir=/scratch/hlee/fylab/rna/teprof2
+workdir=[]
 
 
 ### INPUT

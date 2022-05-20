@@ -6,7 +6,7 @@ ml samtools/1.9
 ml bedtools/2.27.1
 
 # INPUT and parameters
-workdir=/scratch/hlee/fylab/rna/teprof2
+workdir=[]
 
 list=${workdir}/samples.txt
 

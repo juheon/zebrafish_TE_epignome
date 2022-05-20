@@ -4,7 +4,7 @@
 ### SOFTWARE
 ml samtools/1.9
 
-workdir=/scratch/hlee/fylab/rna/teprof2
+workdir=[]
 
 cpus=12
 
